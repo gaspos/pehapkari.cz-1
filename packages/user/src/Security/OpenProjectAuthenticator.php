@@ -120,7 +120,7 @@ final class OpenProjectAuthenticator extends AbstractFormLoginAuthenticator
             return new RedirectResponse($targetPath);
         }
 
-        return new RedirectResponse($this->router->generate('admin'));
+        return new RedirectResponse($this->router->generate('easyadmin'));
     }
 
     protected function getLoginUrl(): string
